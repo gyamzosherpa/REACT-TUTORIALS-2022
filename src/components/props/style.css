@@ -1,0 +1,24 @@
+.card {
+  background-color: rgb(201, 183, 218);
+  height: 510px;
+  width: 400px;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.card > img {
+  border-radius: 20px;
+  height: 400px;
+  width: 400px;
+}
+
+.PlayerList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.playerCard > img {
+  margin: 20px;
+}
