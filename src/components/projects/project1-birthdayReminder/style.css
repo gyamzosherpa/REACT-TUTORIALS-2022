@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.person > img {
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+}
+
+.btn1 {
+  background-color: blueviolet;
+  color: antiquewhite;
+  font-size: 30px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-left: 1000px;
+}
+
+.btn1:hover {
+  background-color: brown;
+}
