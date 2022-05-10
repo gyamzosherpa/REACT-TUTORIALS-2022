@@ -8,7 +8,7 @@ const UseStateObject = () => {
   });
 
   const changeMessage = () => {
-    // ... returns the previous value, it is a spread operator
+    // ... returns all the previous value, it is a spread operator
     setPerson({ ...person, message: 'hello world' });
     // setMessage('hello world')
   };

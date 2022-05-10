@@ -18,6 +18,7 @@ const UseStateArray = () => {
   return (
     <>
       {people.map((person) => {
+        //destructuring
         const { id, name } = person;
         return (
           //when we render a list, we need to have key prop
