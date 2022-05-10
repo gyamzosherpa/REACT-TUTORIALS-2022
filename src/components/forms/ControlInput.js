@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 // In Javascript, const input = document.getElementById("idName");
 // const inputValue = input.value
 
-// React => value, onChange
+// React => value, onChange (controlledInput)
 
 const ControlInput = () => {
   const [firstName, setFirstName] = useState('');

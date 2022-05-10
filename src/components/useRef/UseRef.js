@@ -14,11 +14,10 @@ const UseRef = () => {
     console.log(yourName.current.value);
   };
   //console.log(yourName);
-
-  //   useEffect(() => {
-  //     console.log(yourName.current);
-  //     yourName.current.focus();
-  //   });
+  useEffect(() => {
+    console.log(yourName.current);
+    yourName.current.focus();
+  });
 
   return (
     <div style={{ marginTop: '30px' }}>
