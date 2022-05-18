@@ -4,6 +4,7 @@ import TernaryOperator from './components/conditionalRendering/TernaryOperator';
 import ControlInput from './components/forms/ControlInput';
 import Birthday from './components/projects/project1-birthdayReminder/Birthday';
 import TourApp from './components/projects/project2-toursList/TourApp';
+import ReviewApp from './components/projects/project3-reviews/ReviewApp';
 import BookList from './components/props/BookList';
 import PlayerList from './components/props/PlayerList';
 import UseEffect1 from './components/reactHooks/useEffect/UseEffect1';
@@ -31,7 +32,8 @@ function App() {
       {/* <ShowHide /> */}
       {/* <ControlInput /> */}
       {/* <UseRef /> */}
-      <TourApp />
+      {/* <TourApp /> */}
+      <ReviewApp />
     </div>
   );
 }
