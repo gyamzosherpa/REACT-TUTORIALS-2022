@@ -3,7 +3,7 @@ import data from './data';
 import List from './List';
 import './style.css';
 
-const Birthday = () => {
+const BirthdayApp = () => {
   const [people, setPeople] = useState(data);
 
   return (
@@ -21,4 +21,4 @@ const Birthday = () => {
   );
 };
 
-export default Birthday;
+export default BirthdayApp;
