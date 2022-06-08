@@ -8,6 +8,10 @@ const UseStateArray = () => {
     setPeople([]);
   };
 
+  const showAll = () => {
+    setPeople(data);
+  };
+
   const removeItem = (id) => {
     //remove specific id, filter is a javascript function
     //The filter() method creates a new array with all elements that pass the test implemented by the provided function
@@ -28,13 +32,45 @@ const UseStateArray = () => {
           </div>
         );
       })}
-      <button
-        className="btn"
-        style={{ marginLeft: '480px' }}
-        onClick={clearAll}
-      >
-        Clear All
-      </button>
+
+      {/* if there is atleast one data, it shows "Clear All" btn, else it shows "Show All" */}
+      {people.length > 0 ? (
+        <button
+          className="btn"
+          style={{ marginLeft: '480px' }}
+          onClick={clearAll}
+        >
+          Clear All
+        </button>
+      ) : (
+        <button
+          className="btn"
+          style={{ marginLeft: '480px' }}
+          onClick={showAll}
+        >
+          Show All
+        </button>
+      )}
+
+      {/* {people.length > 0 && (
+        <button
+          className="btn"
+          style={{ marginLeft: '480px' }}
+          onClick={clearAll}
+        >
+          Clear All
+        </button>
+      )}
+
+      {people.length === 0 && (
+        <button
+          className="btn"
+          style={{ marginLeft: '480px' }}
+          onClick={showAll}
+        >
+          Show All
+        </button>
+      )} */}
     </>
   );
 };

@@ -8,6 +8,7 @@ import ControlInput from './components/todo/ControlInput';
 import BirthdayApp from './components/projects/01-birthdayReminder/Birthday';
 import TourApp from './components/projects/02-toursList/TourApp';
 import ReviewApp from './components/projects/03-reviews/ReviewApp';
+import AccordionApp from './components/projects/04-accordion/AccordionApp';
 import MenuApp from './components/projects/05-menuItem/MenuApp';
 import ExperienceApp from './components/projects/06-experienceApp/ExperienceApp';
 import BookList from './components/props/BookList';
@@ -20,6 +21,8 @@ import UseStateCounter from './components/reactHooks/useState/UseStateCounter';
 import UseStateObject from './components/reactHooks/useState/UseStateObject';
 import UseRef from './components/useRef/UseRef';
 import UseReducer from './components/useReducer/UseReducer';
+import TodoApp from './components/projects/07-todoApp/TodoApp';
+
 const Routes6 = () => {
   return (
     <>
@@ -38,9 +41,12 @@ const Routes6 = () => {
           <Route exact path="usestateArray" element={<UseStateArray />} />
           <Route exact path="usestateObject" element={<UseStateObject />} />
           <Route exact path="usestateCounter" element={<UseStateCounter />} />
+
           <Route exact path="useEffect" element={<UseEffect1 />} />
           <Route exact path="useEffectFetch" element={<UseEffectFetch />} />
+
           <Route exact path="useReducer" element={<UseReducer />} />
+
           <Route exact path="useRef" element={<UseRef />} />
 
           {/*.................... conditional Rendering ......................*/}
@@ -49,7 +55,7 @@ const Routes6 = () => {
           <Route exact path="ternaryOperator" element={<TernaryOperator />} />
           <Route exact path="showHide" element={<ShowHide />} />
 
-          {/*.................... input-Controll ......................*/}
+          {/*.................... todo ......................*/}
 
           <Route exact path="controlInput" element={<ControlInput />} />
 
@@ -57,9 +63,11 @@ const Routes6 = () => {
 
           <Route exact path="tourApp" element={<TourApp />} />
           <Route exact path="birthdayApp" element={<BirthdayApp />} />
+          <Route exact path="accordionApp" element={<AccordionApp />} />
           <Route exact path="reviewApp" element={<ReviewApp />} />
           <Route exact path="menuApp" element={<MenuApp />} />
           <Route exact path="experienceApp" element={<ExperienceApp />} />
+          <Route exact path="todoApp" element={<TodoApp />} />
         </Routes>
       </Routers>
     </>

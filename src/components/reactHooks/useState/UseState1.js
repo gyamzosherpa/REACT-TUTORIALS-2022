@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const UseState1 = () => {
+  // default value "Hello"
   const [text, setText] = useState('Hello');
 
   const handleClick = () => {

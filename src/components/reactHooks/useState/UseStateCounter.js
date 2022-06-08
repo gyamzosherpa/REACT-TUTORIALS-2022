@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 
 const UseStateCounter = () => {
+  // default value 0
   const [value, setValue] = useState(0);
 
+  // reset to 0
   const reset = () => {
     setValue(0);
   };
