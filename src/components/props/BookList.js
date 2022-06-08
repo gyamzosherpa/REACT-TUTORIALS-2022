@@ -11,6 +11,7 @@ const BookList = () => {
   return (
     <>
       <div className="bookList">
+        {/* img, title, author are props => "Book.js" */}
         <Book img={images.img} title={images.title} author={images.author}>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi,

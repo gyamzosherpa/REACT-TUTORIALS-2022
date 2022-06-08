@@ -29,6 +29,7 @@ const TernaryOperator = () => {
 
       {isError && <h1>error.....</h1>}
 
+      {/* check 2 condition */}
       {isError ? (
         <p>there is an error...</p>
       ) : (
